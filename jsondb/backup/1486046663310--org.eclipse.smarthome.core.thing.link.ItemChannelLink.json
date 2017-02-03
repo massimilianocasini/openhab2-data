@@ -1,0 +1,220 @@
+{
+  "MySky -\u003e network:device:bce3376d:online": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "device",
+          "bce3376d",
+          "online"
+        ]
+      },
+      "itemName": "MySky"
+    }
+  },
+  "WallPlug_PTStudio_Energia -\u003e zwave:device:04b84a97:node3:meter_kwh": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node3",
+          "meter_kwh"
+        ]
+      },
+      "itemName": "WallPlug_PTStudio_Energia"
+    }
+  },
+  "WallPlug_PTStudio_Potenza -\u003e zwave:device:04b84a97:node3:meter_watts": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node3",
+          "meter_watts"
+        ]
+      },
+      "itemName": "WallPlug_PTStudio_Potenza"
+    }
+  },
+  "ProdinoSouliss -\u003e network:device:192_168_178_69:online": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "device",
+          "192_168_178_69",
+          "online"
+        ]
+      },
+      "itemName": "ProdinoSouliss"
+    }
+  },
+  "MotionSensor_PTStudio_Luminosita -\u003e zwave:device:04b84a97:node2:sensor_luminance": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2",
+          "sensor_luminance"
+        ]
+      },
+      "itemName": "MotionSensor_PTStudio_Luminosita"
+    }
+  },
+  "MySkyTime -\u003e network:device:bce3376d:time": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "device",
+          "bce3376d",
+          "time"
+        ]
+      },
+      "itemName": "MySkyTime"
+    }
+  },
+  "Weather_Humidity -\u003e yahooweather:weather:c5d832f0:humidity": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "yahooweather",
+          "weather",
+          "c5d832f0",
+          "humidity"
+        ]
+      },
+      "itemName": "Weather_Humidity"
+    }
+  },
+  "MotionSensor_PTStudio_Tamper -\u003e zwave:device:04b84a97:node2:alarm_general": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2",
+          "alarm_general"
+        ]
+      },
+      "itemName": "MotionSensor_PTStudio_Tamper"
+    }
+  },
+  "WallPlug_PTStudio_Presa -\u003e zwave:device:04b84a97:node3:switch_binary": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node3",
+          "switch_binary"
+        ]
+      },
+      "itemName": "WallPlug_PTStudio_Presa"
+    }
+  },
+  "Weather_Pressure -\u003e yahooweather:weather:c5d832f0:pressure": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "yahooweather",
+          "weather",
+          "c5d832f0",
+          "pressure"
+        ]
+      },
+      "itemName": "Weather_Pressure"
+    }
+  },
+  "ProdinoSoulissPing -\u003e network:device:192_168_178_69:time": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "device",
+          "192_168_178_69",
+          "time"
+        ]
+      },
+      "itemName": "ProdinoSoulissPing"
+    }
+  },
+  "MotionSensor_PTStudio_Temperatura -\u003e zwave:device:04b84a97:node2:sensor_temperature": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2",
+          "sensor_temperature"
+        ]
+      },
+      "itemName": "MotionSensor_PTStudio_Temperatura"
+    }
+  },
+  "MotionSensor_PTStudio_Volumetrico -\u003e zwave:device:04b84a97:node2:sensor_binary": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2",
+          "sensor_binary"
+        ]
+      },
+      "itemName": "MotionSensor_PTStudio_Volumetrico"
+    }
+  },
+  "MotionSensor_PTStudio_Batteria -\u003e zwave:device:04b84a97:node2:battery-level": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2",
+          "battery-level"
+        ]
+      },
+      "itemName": "MotionSensor_PTStudio_Batteria"
+    }
+  },
+  "Weather_Temperature -\u003e yahooweather:weather:c5d832f0:temperature": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "yahooweather",
+          "weather",
+          "c5d832f0",
+          "temperature"
+        ]
+      },
+      "itemName": "Weather_Temperature"
+    }
+  }
+}

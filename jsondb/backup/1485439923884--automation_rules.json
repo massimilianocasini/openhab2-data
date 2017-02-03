@@ -1,0 +1,43 @@
+{
+  "rule_1": {
+    "class": "org.eclipse.smarthome.automation.Rule",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "label": "an item state changes",
+          "description": "This triggers the rule if an item state has changed.",
+          "configuration": {
+            "properties": {
+              "itemName": "MotionSensor_PTStudio_Volumetrico",
+              "state": "OPEN"
+            }
+          },
+          "type": "core.ItemStateChangeTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "id": "2",
+          "label": "send a command",
+          "description": "Sends a command to a specified item.",
+          "configuration": {
+            "properties": {
+              "itemName": "WallPlug_PTStudio_Presa",
+              "command": "UP"
+            }
+          },
+          "type": "core.ItemCommandAction"
+        }
+      ],
+      "configuration": {
+        "properties": {}
+      },
+      "configDescriptions": [],
+      "uid": "rule_1",
+      "name": "Accendi luce se IR attivato",
+      "tags": []
+    }
+  }
+}

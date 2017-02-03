@@ -1,0 +1,979 @@
+{
+  "zwave:device:04b84a97:node3": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "Z-Wave Node 3: FGWP101 Metered Wall Plug Switch",
+      "bridgeUID": {
+        "segments": [
+          "zwave",
+          "serial_zstick",
+          "04b84a97"
+        ]
+      },
+      "channels": [
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "switch_binary"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "switch_binary"
+            ]
+          },
+          "label": "Switch",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:OnOffType": "SWITCH_BINARY,BASIC"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "sensor_power"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "sensor_power"
+            ]
+          },
+          "label": "Sensor (power)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "SENSOR_MULTILEVEL;type\u003dPOWER"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "meter_kwh"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "meter_kwh"
+            ]
+          },
+          "label": "Electric meter (kWh)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "METER;type\u003dE_KWh"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "meter_watts"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "meter_watts"
+            ]
+          },
+          "label": "Electric meter (watts)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "METER;type\u003dE_W"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "meter_reset"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "meter_reset"
+            ]
+          },
+          "label": "Reset the total power consumption",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:OnOffType": "METER"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "config_decimal_param61"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "fibaro_fgwp101_00_000_config_decimal_param61"
+            ]
+          },
+          "label": "LED color when device is on",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "CONFIGURATION;parameter\u003d61"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "config_decimal_param62"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "fibaro_fgwp101_00_000_config_decimal_param62"
+            ]
+          },
+          "label": "LED color when device is off",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "CONFIGURATION;parameter\u003d62"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node3",
+              "notification_send"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "notification_send"
+            ]
+          },
+          "label": "Start Alarm LED Illumination",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "ALARM;event1\u003dSMOKE:1,event3\u003dBURGLAR:1"
+          },
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "config_42_1": 10,
+          "config_51_2": 500,
+          "config_52_1": 6,
+          "config_63_1": 1,
+          "config_43_1": 30,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@ea3353": [],
+          "config_60_2": 25000,
+          "config_61_1": 1,
+          "config_62_1": 8,
+          "config_40_1": 50,
+          "config_50_2": 300,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@45e87e": [],
+          "config_70_2": -1,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@855a01": [],
+          "config_1_1": 1,
+          "config_16_1": 1,
+          "config_49_1": 0,
+          "config_39_2": 600,
+          "config_34_1": 63,
+          "config_35_1": 0,
+          "config_45_1": 5,
+          "config_47_2": 3600,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@17cd50c": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@fefbb": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@c12f33": [],
+          "powerlevel_level": 0,
+          "powerlevel_timeout": 0,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@15a43d3": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@11d7986": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@8e3c7b": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1dabf8": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@4305a6": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1728b14": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@51a14d": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@108c96e": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@16bf7a2": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@18fc552": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1482413": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@177ae22": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@187e05f": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@8bb1a3": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@fe3bcf": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@15cfa16": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@888307": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@d364d9": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@5a51e3": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@9daa58": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@a23a93": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@11f9b99": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@f4276b": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1febfe": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@311a7": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@817876": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1018043": []
+        }
+      },
+      "properties": {
+        "zwave_class_basic": "ROUTING_SLAVE",
+        "zwave_class_generic": "BINARY_SWITCH",
+        "zwave_frequent": "false",
+        "zwave_neighbours": "",
+        "zwave_version": "25.25",
+        "zwave_listening": "true",
+        "zwave_deviceid": "4096",
+        "zwave_nodeid": "3",
+        "zwave_routing": "true",
+        "zwave_beaming": "true",
+        "zwave_class_specific": "NOT_USED",
+        "zwave_manufacturer": "271",
+        "zwave_devicetype": "1536"
+      },
+      "uid": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node3"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "zwave",
+          "fibaro_fgwp101_00_000"
+        ]
+      }
+    }
+  },
+  "network:device:bce3376d": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "MySky",
+      "channels": [
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "network",
+              "device",
+              "bce3376d",
+              "online"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "network",
+              "online"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "network",
+              "device",
+              "bce3376d",
+              "time"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "network",
+              "time"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "hostname": "192.168.178.27",
+          "refresh_interval": 60000.0,
+          "port": 49153.0,
+          "dhcplisten": false,
+          "retry": 2.0,
+          "timeout": 5000.0,
+          "use_system_ping": false
+        }
+      },
+      "properties": {},
+      "uid": {
+        "segments": [
+          "network",
+          "device",
+          "bce3376d"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "network",
+          "device"
+        ]
+      }
+    }
+  },
+  "zwave:device:04b84a97:node2": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "Z-Wave Node 2: FGMS001 Motion Sensor",
+      "bridgeUID": {
+        "segments": [
+          "zwave",
+          "serial_zstick",
+          "04b84a97"
+        ]
+      },
+      "channels": [
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node2",
+              "sensor_binary"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "sensor_binary"
+            ]
+          },
+          "label": "Binary Sensor (Unknown)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:OnOffType": "SENSOR_BINARY;type\u003dUNKNOWN"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node2",
+              "sensor_temperature"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "sensor_temperature"
+            ]
+          },
+          "label": "Sensor (temperature)",
+          "configuration": {
+            "properties": {
+              "config_scale": "0"
+            }
+          },
+          "properties": {
+            "binding:*:DecimalType": "SENSOR_MULTILEVEL;type\u003dTEMPERATURE"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node2",
+              "sensor_luminance"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "sensor_luminance"
+            ]
+          },
+          "label": "Sensor (luminance)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:DecimalType": "SENSOR_MULTILEVEL;type\u003dLUMINANCE"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node2",
+              "battery-level"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "system",
+              "battery-level"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:PercentType": "BATTERY"
+          },
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "device",
+              "04b84a97",
+              "node2",
+              "alarm_general"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "alarm_general"
+            ]
+          },
+          "label": "Alarm (general)",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {
+            "binding:*:OnOffType": "SENSOR_ALARM,BASIC;type\u003dGENERAL"
+          },
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@9962b9": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@bb91dd": [],
+          "config_16_1": 0,
+          "wakeup_node": 1,
+          "config_12_1": 0,
+          "config_14_1": -1,
+          "config_64_2": 300,
+          "config_20_1": 15,
+          "config_40_2": 50,
+          "config_87_1": 28,
+          "config_62_2": 900,
+          "config_86_1": 18,
+          "config_42_2": 300,
+          "config_83_2": 1000,
+          "config_82_2": 100,
+          "config_60_1": 2,
+          "config_81_1": 50,
+          "config_80_1": 10,
+          "wakeup_interval": 7200,
+          "config_1_1": 10,
+          "config_2_1": 15,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1358422": [],
+          "config_6_2": 10,
+          "config_8_1": 0,
+          "config_9_2": 200,
+          "config_3_1": 1,
+          "config_22_2": 10,
+          "config_4_1": 2,
+          "config_24_1": 1,
+          "config_66_2": 0,
+          "config_26_1": 0,
+          "config_89_1": 1,
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@17a6011": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@61fc05": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1278626": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@17b456b": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@13d23b1": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@786eb7": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@3dde0b": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@109e2fe": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@910948": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@6052b0": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@e956dd": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@136f8fe": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1087255": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@ca5fd8": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@236ebf": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@f926bd": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@14dcd": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@3ed252": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@830e82": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@7b65f2": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@44fca2": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@e2c3b8": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@d72a17": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1bf1408": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1c4df67": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1943f4c": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@2317ed": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@1d6a7ec": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@7be190": [],
+          "group_org.openhab.binding.zwave.internal.protocol.ZWaveAssociationGroup@10564f2": []
+        }
+      },
+      "properties": {
+        "zwave_class_basic": "ROUTING_SLAVE",
+        "zwave_class_generic": "BINARY_SENSOR",
+        "zwave_frequent": "false",
+        "zwave_neighbours": "",
+        "zwave_version": "2.8",
+        "zwave_listening": "false",
+        "zwave_deviceid": "4097",
+        "zwave_nodeid": "2",
+        "zwave_routing": "true",
+        "zwave_beaming": "true",
+        "zwave_class_specific": "ROUTING_SENSOR_BINARY",
+        "zwave_manufacturer": "271",
+        "zwave_devicetype": "2048",
+        "zwave_wakeup_time": "2017-02-03T10:38:18Z"
+      },
+      "uid": {
+        "segments": [
+          "zwave",
+          "device",
+          "04b84a97",
+          "node2"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "zwave",
+          "fibaro_fgms001_00_000"
+        ]
+      }
+    }
+  },
+  "network:device:192_168_178_69": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "Arduino Souliss",
+      "channels": [
+        {
+          "acceptedItemType": "Switch",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "network",
+              "device",
+              "192_168_178_69",
+              "online"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "network",
+              "online"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "network",
+              "device",
+              "192_168_178_69",
+              "time"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "network",
+              "time"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "hostname": "192.168.178.69",
+          "refresh_interval": 60000.0,
+          "port": 0.0,
+          "dhcplisten": false,
+          "retry": 1.0,
+          "timeout": 5000.0,
+          "use_system_ping": true
+        }
+      },
+      "properties": {},
+      "uid": {
+        "segments": [
+          "network",
+          "device",
+          "192_168_178_69"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "network",
+          "device"
+        ]
+      }
+    }
+  },
+  "zwave:serial_zstick:04b84a97": {
+    "class": "org.eclipse.smarthome.core.thing.internal.BridgeImpl",
+    "value": {
+      "label": "Z-Wave Serial Controller",
+      "channels": [
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "serial_zstick",
+              "04b84a97",
+              "serial_sof"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "serial_sof"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "serial_zstick",
+              "04b84a97",
+              "serial_ack"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "serial_ack"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "serial_zstick",
+              "04b84a97",
+              "serial_nak"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "serial_nak"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "serial_zstick",
+              "04b84a97",
+              "serial_can"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "serial_can"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "zwave",
+              "serial_zstick",
+              "04b84a97",
+              "serial_oof"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "zwave",
+              "serial_oof"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "controller_softreset": 0.0,
+          "security_networkkey": "02 6A 7A 4F 0D E4 03 4E 04 96 54 9B 0F 17 B8 5A",
+          "security_inclusionmode": 0.0,
+          "controller_suc": false,
+          "controller_sync": 0.0,
+          "port": "/dev/ttyACM0",
+          "controller_master": true,
+          "inclusion_mode": 2.0,
+          "controller_wakeupperiod": 3600.0,
+          "heal_time": 2.0,
+          "controller_exclude": 0.0,
+          "controller_inclusiontimeout": 30.0,
+          "controller_hardreset": 0.0
+        }
+      },
+      "properties": {
+        "zwave_neighbours": "",
+        "zwave_nodeid": "1"
+      },
+      "uid": {
+        "segments": [
+          "zwave",
+          "serial_zstick",
+          "04b84a97"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "zwave",
+          "serial_zstick"
+        ]
+      }
+    }
+  },
+  "yahooweather:weather:c5d832f0": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "Weather Information",
+      "channels": [
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "yahooweather",
+              "weather",
+              "c5d832f0",
+              "temperature"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "yahooweather",
+              "temperature"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "yahooweather",
+              "weather",
+              "c5d832f0",
+              "humidity"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "yahooweather",
+              "humidity"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "yahooweather",
+              "weather",
+              "c5d832f0",
+              "pressure"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "yahooweather",
+              "pressure"
+            ]
+          },
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "refresh": 300.0,
+          "location": 721943.0
+        }
+      },
+      "properties": {},
+      "uid": {
+        "segments": [
+          "yahooweather",
+          "weather",
+          "c5d832f0"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "yahooweather",
+          "weather"
+        ]
+      }
+    }
+  }
+}
